@@ -1,1 +1,6 @@
 https://blog.logrocket.com/create-news-feed-react-native/#designing-news-article-card
+
+imagens:
+https://pixabay.com/photos/sunset-refinery-industrial-gas-oil-2165885/
+https://pixabay.com/photos/radio-masts-phone-telephone-poles-600837/
+https://pixabay.com/photos/machine-banking-withdrawal-660234/
