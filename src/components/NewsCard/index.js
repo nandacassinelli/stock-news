@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Text, TouchableOpacity } from 'react-native'
+import { View, Image, Text, TouchableOpacity } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 
 import bank from './bank-machines.jpg'
@@ -13,12 +13,24 @@ const post = {
 
 export default function NewsCard() {
   return (
-    <TouchableOpacity activeOpacity={1} style={styles.container}>
-      <Image source={bank} resizeMode="cover" style={styles.image} />
-      <LinearGradient colors={['#0000', '#000A', '#000']} style={styles.titleContainer}>
-        <Text style={styles.text}>{post?.title}</Text>
-        <Text style={styles.timestamp}>{post?.publishedAt}</Text>
-      </LinearGradient>
-    </TouchableOpacity>
+    <View>
+      <TouchableOpacity activeOpacity={1} style={styles.container}>
+        <Image source={bank} resizeMode="cover" style={styles.image} />
+        <LinearGradient colors={['#0000', '#000A', '#000']} style={styles.titleContainer}>
+          <Text style={styles.newsText}>{post?.title}</Text>
+          <Text style={styles.timestamp}>{post?.publishedAt}</Text>
+        </LinearGradient>
+      </TouchableOpacity>
+
+      <View style={styles.view}>
+        <TouchableOpacity activeOpacity={1} style={styles.areaButton}>
+          <Text style={styles.labelButton}>Comprar</Text>
+        </TouchableOpacity>
+        <View style={styles.verticleLine} />
+        <TouchableOpacity activeOpacity={1} style={styles.areaButton}>
+          <Text style={styles.labelButton}>Vender</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
   )
 }

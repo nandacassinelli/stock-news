@@ -1,18 +1,20 @@
-import { Platform, StyleSheet } from 'react-native'
-
-const boxShadow = Platform.select({
-  android: { elevation: 6 }
-})
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
+  view: {
+    backgroundColor: '#f0f0f0',
+    flexDirection: 'row',
+    marginBottom: 16,
+    marginHorizontal: 16,
+    justifyContent: 'space-around',
+    borderRadius: 24
+  },
   container: {
     height: 240,
-    marginBottom: 18,
     backgroundColor: '#eee',
     borderRadius: 24,
     marginHorizontal: 16,
-    marginTop: 16,
-    ...boxShadow
+    marginTop: 16
   },
   imageContainer: { flex: 1 },
   image: {
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-start'
   },
-  text: {
+  newsText: {
     fontSize: 18,
     fontWeight: '600',
     lineHeight: 24,
@@ -46,6 +48,23 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     right: 16,
     bottom: 8
+  },
+  areaButton: {
+    height: 40,
+    width: '50%',
+    marginTop: 16,
+    marginBottom: 16,
+    justifyContent: 'center'
+  },
+  labelButton: {
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+  verticleLine: {
+    height: 40,
+    marginTop: 16,
+    width: 1.6,
+    backgroundColor: '#909090'
   }
 })
 
