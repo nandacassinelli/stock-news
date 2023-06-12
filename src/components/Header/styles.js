@@ -1,25 +1,21 @@
 import { StyleSheet, StatusBar } from 'react-native'
 
-const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64
+const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 64
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#8000ff',
+    backgroundColor: '#25AADA',
     paddingTop: statusBarHeight,
-    paddingStart: 16,
-    paddingEnd: 16,
-    paddingBottom: 44
+    paddingBottom: '5%',
+    marginBottom: 20
   },
   content: {
-    // flex: 1,
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+    alignSelf: 'center'
   },
-  username: {
-    fontSize: 18,
+  headerName: {
+    fontSize: 25,
     color: '#FFF',
-    fontWeight: 'bold'
+    fontWeight: '600'
   },
   buttonUser: {
     width: 44,

@@ -1,12 +1,13 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
+
 import Header from '../../components/Header'
 import NewsCard from '../../components/NewsCard'
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header name="Fernanda Cassinelli" />
+      <Header name="Notícias" />
       <NewsCard />
     </View>
   )
